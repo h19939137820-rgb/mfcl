@@ -4,33 +4,6 @@ from PIL import Image
 
 
 
-# class tampCOCO(Dataset):
-#     def __init__(self, args):
-#         super(tampCOCO, self).__init__()
-#         self.crop_size = args['crop_size']
-#         self.path = args['path']
-#         self.bcm_list = []
-#         self.cm_list = []
-#         self.sp_list = []
-#         self.tamp_list = []
-#         file_names = ['bcm_COCO_list.txt', 'cm_COCO_list.txt', 'sp_COCO_list.txt']
-#         lines_to_read = 10000  # 指定要读取的行数
-#
-#         for file_name in file_names:
-#             with open(os.path.join(self.path, file_name), "r") as f:
-#                 lines_read = 0
-#                 for line in f:
-#                     self.tamp_list.append(line.strip().split(','))
-#                     lines_read += 1
-#                     if lines_read >= lines_to_read:
-#                         break
-#
-#     def __getitem__(self, index):
-#         crop_width, crop_height = self.crop_size
-#         image_name = self.path + self.tamp_list[index][0]
-#         mask_name = self.path + self.tamp_list[index][1]
-
-
 
 import os
 import cv2
